@@ -1,0 +1,290 @@
+/*eliminar margin pading border*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*encabezado*/
+header {
+    background-color: rgb(78, 7, 3);/*color de fondo encabezado*/
+    display: flex;/*ordenar horizontalmente*/
+    flex-direction: row;/*orden direccion elementos hacia la derecha*/
+    align-items: center;/*alinear titulo al medio*/
+}
+header h1 {
+    color: black;/*color titulo*/
+    font-weight: normal;
+}
+
+header img {
+    width: 6em;/*tamaño imagen del logo*/
+    margin: 1em;/*margen alrededor*/
+}
+/*menu*/
+nav {
+    background-color: rgb(104, 4, 4);
+    border-top-style: double;
+    border-top-color: rgb(128, 79, 6);
+    border-top-width: 0.5em;
+    border-bottom-style: double;
+    border-bottom-color: rgb(155, 98, 13);
+    border-bottom-width: 0.5em;
+}
+nav ul{
+    display: flex;/*contenedor flexible*/
+    flex-direction: row;/*fila horizontal*/
+    list-style: none;/*sacar circulo texto*/
+}
+
+nav a {
+    text-decoration: none;/*saca el subrallado*/
+    padding: 1em;/*espacion del elemento y el borde del recuadro*/
+    color: rgb(0, 0, 0);/*color letra*/
+}
+
+nav li {
+    padding: 1em;/*espacio del elemento y el borde*/
+}
+
+nav a:hover, nav a:focus{
+    background-color: rgba(126, 107, 14, 0.822);/*color seleccion del icono*/
+    color: aliceblue;
+}
+
+/*contenido principal*/
+/*inicio*/
+#main-pag1 {
+    height: 95vh;/*alto del contenedor padre*/
+    display: flex;/*ordenar horizontalmente*/
+    flex-direction: row;/*orden direccion elementos hacia la derecha*/
+    background-color: rgb(126, 14, 14);
+}
+
+#main-pag1 #section-pag1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#articulo1 {
+    background-color: rgb(99, 4, 4);
+    padding: 1em;
+    margin: 2%;
+    width: 40em;
+    height: 30em;
+    border-style: solid;
+    border-color: rgb(155, 98, 13);
+    border-width: 0.5em;
+    border-radius: 10% 0%;
+}
+
+#imagen-pag1 {
+    width: 10em;
+    float: left;
+    
+}
+
+#articulo2 {
+    background-color: rgb(255, 170, 0);
+    padding: 1em;
+    margin: 2%;
+    width: 40em;
+    height: 30em;
+    border-style: solid;
+    border-color: rgb(155, 98, 13);
+    border-width: 0.5em;
+    border-radius: 0% 10%;
+}
+
+.h2-pag1 {
+    text-align: center;
+    color: rgb(155, 98, 13);
+    margin: 0.5em;
+}
+
+.parrafo-art1-pag1 {
+    color: aliceblue;
+    margin-bottom: 0.5em;
+}
+
+.parrafo-art2-pag1 {
+    color: black;
+}
+
+.imagen-art2 {
+    width: 10em;
+}
+/*reparto*/
+#main-pag2 {
+    height: 160vh;/*alto del contenedor padre*/
+    display: flex;/*ordenar horizontalmente*/
+    flex-direction: row;/*orden direccion elementos hacia la derecha*/
+    background-color: rgb(126, 14, 14);
+}
+
+#main-pag2 #seccion-pag2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.articulo-pag2 {
+    background-color: rgb(255, 170, 0);
+    margin: 2%;
+    width: 16em;
+    height: 26em;
+    border-style: solid;
+    border-color: rgb(155, 98, 13);
+    border-width: 0.3em;
+    border-radius: 10%;
+}
+
+.figure-pag2 {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-pag2 {
+    border-radius: 50%;
+    width: 8em;
+    margin: 0.5em;
+}
+
+.h2-pag2 {
+    border-top-color: rgb(155, 98, 13);
+    border-top-width: 0.3em;
+    border-top-style: solid;
+    border-bottom-color: rgb(155, 98, 13);
+    border-bottom-width: 0.3em;
+    border-bottom-style: solid;
+    font-size: larger;
+    color: rgb(155, 98, 13);
+    background-color: rgb(80, 13, 13);
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.parrafo-pag2 {
+    margin: 0.5em;
+}
+
+/*datos*/
+#main-pag3 {
+    height: 70vh;/*alto del contenedor padre*/
+    display: flex;/*ordenar horizontalmente*/
+    flex-direction: row;/*orden direccion elementos hacia la derecha*/
+}
+
+#seccion-pag3 {
+    width: 80%;
+    background-color: rgb(126, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aside-pag3 {
+    width: 20%;
+    background-color: rgb(66, 4, 4);
+    border-right-style: solid;
+    border-right-color: rgb(9, 6, 0);
+    border-right-width: 0.3em;
+    flex-direction: column;
+}
+
+.img-pag3 {
+    width: 15em;
+    margin-top: 1em;
+}
+
+.ficaption-pag3 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/*tabla*/
+table {
+    border: 0.25em solid rgb(147, 73, 4);
+    border-collapse: collapse;
+    font-size: larger;
+    text-align: center;
+}
+
+table caption {
+    margin-bottom: 0.25em;
+    padding: 0.5em;
+    font-weight: bold;
+    border: 0.25em solid rgb(179, 17, 17);
+    background-color: rgb(155, 106, 8);
+    color: aliceblue;
+}
+
+th, td {
+    border: 0.25em solid rgb(155, 98, 13);
+    padding: 0.5em;
+}
+
+th {
+    background-color: rgb(255, 170, 0);
+}
+
+#th-esquina {
+    background-color: rgb(185, 132, 10);
+}
+
+td {
+    color: aliceblue;
+    background-color: rgb(100, 79, 8);
+}
+
+.fila-horizontal {
+    height: 8em;
+}
+
+.lista-pag3 {
+    margin-left: 1em;
+    font-size: medium;
+    text-align: left;
+}
+
+table tr :hover{
+    background-color: rgb(126, 14, 14);
+}
+
+/*pie de pagina*/
+footer {
+    background-color: rgb(177, 133, 11);
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: rgb(0, 0, 0);
+    border-top-width: 0.3em;
+}
+
+footer li {
+    color: rgb(2, 1, 0);
+    margin-top: 0.5em;
+}
+
+footer ul {
+    text-align: center;
+    list-style: none;
+    padding: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(12, 8, 0)
+}
